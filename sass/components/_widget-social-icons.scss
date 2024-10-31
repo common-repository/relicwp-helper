@@ -1,0 +1,167 @@
+/**
+ * Social Icons Widget
+ */
+.pdwp-social-icons {
+	display: inline-block;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&.rotate a:hover {
+		transform: rotate(360deg);
+	}
+
+	&.zoomout a:hover {
+		transform: scale(0.8);
+	}
+
+	&.float a:hover {
+		transform: translateY(-3px);
+	}
+
+	li {
+	    display: inline-block;
+		margin: 3px;
+		padding: 0;
+
+		a {
+		    display: block;
+		    padding: 0;
+		    text-align: center;
+		}
+	}
+
+	&.style-light li a,
+	&.style-dark li a,
+	&.style-colored li a {
+	    width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 16px;
+		border-radius: 2px;
+	}
+
+	&.style-light li {
+		a {
+		    color: $color-13;
+		    border: 1px solid $border-color;
+		}
+
+		&.pdwp-twitter a:hover { color: #46d4fe !important; border-color: #46d4fe !important; }
+		&.pdwp-facebook a:hover { color: #37589b !important; border-color: #37589b !important; }
+		&.pdwp-google-plus a:hover { color: #de5a49 !important; border-color: #de5a49 !important; }
+		&.pdwp-pinterest a:hover { color: #cb2027 !important; border-color: #cb2027 !important; }
+		&.pdwp-dribbble a:hover { color: #ea4c89 !important; border-color: #ea4c89 !important; }
+		&.pdwp-vk a:hover { color: #597BA5 !important; border-color: #597BA5 !important; }
+		&.pdwp-instagram a:hover { color: #3F729B !important; border-color: #3F729B !important; }
+		&.pdwp-linkedin a:hover { color: #3399CC !important; border-color: #3399CC !important; }
+		&.pdwp-tumblr a:hover { color: #2C4762 !important; border-color: #2C4762 !important; }
+		&.pdwp-github a:hover { color: #60b044 !important; border-color: #60b044 !important; }
+		&.pdwp-flickr a:hover { color: #fa4086 !important;border-color: #fa4086 !important; }
+		&.pdwp-skype a:hover { color: #00AFF0 !important; border-color: #00AFF0 !important; }
+		&.pdwp-trello a:hover { color: #0079bf !important; border-color: #0079bf !important; }
+		&.pdwp-foursquare a:hover { color: #2d5be3 !important; border-color: #2d5be3 !important; }
+		&.pdwp-youtube a:hover { color: #C4302B !important; border-color: #C4302B !important; }
+		&.pdwp-vimeo a:hover { color: #1ab7ea !important; border-color: #1ab7ea !important; }
+		&.pdwp-vine a:hover { color: #00bf8f !important; border-color: #00bf8f !important; }
+		&.pdwp-xing a:hover { color: #006464 !important; border-color: #006464 !important; }
+		&.pdwp-yelp a:hover { color: #C41200 !important; border-color: #C41200 !important; }
+		&.pdwp-tripadvisor a:hover { color: #589442 !important; border-color: #589442 !important; }
+		&.pdwp-rss a:hover { color: #ff7900 !important; border-color: #ff7900 !important; }
+		&.pdwp-email a:hover { color: #13aff0 !important; border-color: #13aff0 !important; }
+	}
+
+	&.style-dark li {
+		a {
+		    color: $color-2;
+		    border: 1px solid $color-2;
+		}
+
+		&.pdwp-twitter a:hover { color: #46d4fe !important; border-color: #46d4fe !important; }
+		&.pdwp-facebook a:hover { color: #37589b !important; border-color: #37589b !important; }
+		&.pdwp-google-plus a:hover { color: #de5a49 !important; border-color: #de5a49 !important; }
+		&.pdwp-pinterest a:hover { color: #cb2027 !important; border-color: #cb2027 !important; }
+		&.pdwp-dribbble a:hover { color: #ea4c89 !important; border-color: #ea4c89 !important; }
+		&.pdwp-vk a:hover { color: #597BA5 !important; border-color: #597BA5 !important; }
+		&.pdwp-instagram a:hover { color: #3F729B !important; border-color: #3F729B !important; }
+		&.pdwp-linkedin a:hover { color: #3399CC !important; border-color: #3399CC !important; }
+		&.pdwp-tumblr a:hover { color: #2C4762 !important; border-color: #2C4762 !important; }
+		&.pdwp-github a:hover { color: #60b044 !important; border-color: #60b044 !important; }
+		&.pdwp-flickr a:hover { color: #fa4086 !important;border-color: #fa4086 !important; }
+		&.pdwp-skype a:hover { color: #00AFF0 !important; border-color: #00AFF0 !important; }
+		&.pdwp-trello a:hover { color: #0079bf !important; border-color: #0079bf !important; }
+		&.pdwp-foursquare a:hover { color: #2d5be3 !important; border-color: #2d5be3 !important; }
+		&.pdwp-youtube a:hover { color: #C4302B !important; border-color: #C4302B !important; }
+		&.pdwp-vimeo a:hover { color: #1ab7ea !important; border-color: #1ab7ea !important; }
+		&.pdwp-vine a:hover { color: #00bf8f !important; border-color: #00bf8f !important; }
+		&.pdwp-xing a:hover { color: #006464 !important; border-color: #006464 !important; }
+		&.pdwp-yelp a:hover { color: #C41200 !important; border-color: #C41200 !important; }
+		&.pdwp-tripadvisor a:hover { color: #589442 !important; border-color: #589442 !important; }
+		&.pdwp-rss a:hover { color: #ff7900 !important; border-color: #ff7900 !important; }
+		&.pdwp-email a:hover { color: #13aff0 !important; border-color: #13aff0 !important; }
+	}
+
+	&.style-colored li {
+		a {
+		    color: $color-1;
+
+		    &:hover {
+		    	color: $color-1;
+		    }
+		}
+
+		&.pdwp-twitter a { background-color: #46d4fe; }
+		&.pdwp-twitter a:hover { background-color: #39b4d8; }
+		&.pdwp-facebook a { background-color: #37589b; }
+		&.pdwp-facebook a:hover{ background-color: #2d477c; }
+		&.pdwp-google-plus a { background-color: #de5a49; }
+		&.pdwp-google-plus a:hover { background-color: #bb4c3e; }
+		&.pdwp-pinterest a { background-color: #cb2027; }
+		&.pdwp-pinterest a:hover { background-color: #a91d23; }
+		&.pdwp-dribbble a { background-color: #ea4c89; }
+		&.pdwp-dribbble a:hover { background-color: #c64174; }
+		&.pdwp-vk a { background-color: #597BA5; }
+		&.pdwp-vk a:hover { background-color: #486384; }
+		&.pdwp-instagram a { background-color: #3F729B; }
+		&.pdwp-instagram a:hover { background-color: #315a7c; }
+		&.pdwp-linkedin a { background-color: #3399CC; }
+		&.pdwp-linkedin a:hover { background-color: #2678a1; }
+		&.pdwp-tumblr a { background-color: #2C4762; }
+		&.pdwp-tumblr a:hover { background-color: #1d3042; }
+		&.pdwp-github a { background-color: #60b044; }
+		&.pdwp-github a:hover { background-color: #4f9237; }
+		&.pdwp-flickr a { background-color: #fa4086; }
+		&.pdwp-flickr a:hover { background-color: #c63169; }
+		&.pdwp-skype a { background-color: #00AFF0; }
+		&.pdwp-skype a:hover { background-color: #0291c6; }
+		&.pdwp-trello a { background-color: #0079bf; }
+		&.pdwp-trello a:hover { background-color: #0079bf; }
+		&.pdwp-foursquare a { background-color: #2d5be3; }
+		&.pdwp-foursquare a:hover { background-color: #2d5be3; }
+		&.pdwp-youtube a { background-color: #C4302B; }
+		&.pdwp-youtube a:hover { background-color: #982420; }
+		&.pdwp-vimeo a { background-color: #1ab7ea; }
+		&.pdwp-vimeo a:hover { background-color: #1494bd; }
+		&.pdwp-vine a { background-color: #00bf8f; }
+		&.pdwp-vine a:hover { background-color: #01906c; }
+		&.pdwp-xing a { background-color: #006464; }
+		&.pdwp-xing a:hover { background-color: #014646; }
+		&.pdwp-yelp a { background-color: #C41200; }
+		&.pdwp-yelp a:hover { background-color: #940f01; }
+		&.pdwp-tripadvisor a { background-color: #589442; }
+		&.pdwp-tripadvisor a:hover { background-color: #426f32; }
+		&.pdwp-rss a { background-color: #ff7900; }
+		&.pdwp-rss a:hover { background-color: #d46603; }
+		&.pdwp-email a { background-color: #13aff0; }
+		&.pdwp-email a:hover { background-color: #0f8dc2; }
+	}
+
+	&.style-simple li {
+		margin: 0 6px;
+
+	    a {
+		    font-size: 16px;
+		}
+	}
+}
